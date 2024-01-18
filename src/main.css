@@ -1,0 +1,242 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'LabGrotesque', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.97);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 100px;
+    transition: background-color 0.3s ease;
+}
+.navbar.transparent {
+    background-color: rgba(255, 255, 255, 0.9);
+}    
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 25px;
+    height: auto;
+    margin-left: -20px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.items {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.items li {
+    color: #767676;
+    cursor: pointer;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 550;
+    transition: .2s ease-in;
+}
+
+.items li:hover {
+    color: #333;
+    transform: scale(1.05);
+}
+.items li:nth-child(3){
+    color: #333;
+}
+
+.navbar button {
+    width: 132px;
+    height: 52px;
+    border-radius: 32px;
+    font-size: 18px;
+    background-color: #04ddb2;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    transition: .2s ease-in-out;
+    margin-right: 20px;
+    border: none;
+    transition: .4s;
+    box-shadow: 0 10px 20px -8px transparent;
+}
+
+.navbar button:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 70vh;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.content h2 {
+    font-size: 60px;
+    line-height: 1.05;
+    margin-bottom: 12px;
+    margin-top: 800px;
+    font-weight: 900;
+    cursor: default;
+    margin-right: 20px;
+    display: flex;
+}
+
+.content h2 span.logo {
+    color: #333;
+}
+
+.content h2 {
+    color: #04ddb2;
+
+}
+
+.content p {
+    font-size: 28px;
+    cursor: default;
+    position: relative;
+    line-height: 1.45;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 35%;
+}
+
+.video {
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.video img:hover {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content h3 {
+    text-align: center;
+    margin-bottom: 48px;
+    max-width: 500px;
+    font-size: 56px;
+    line-height: 1.05;
+    font-weight: 900;
+    margin-top: 80px;
+    cursor: default;
+}
+.content button {
+    width: 200px;
+    padding:18px;
+    border-radius: 32px;
+    font-size: 18px;
+    background-color: #04ddb2;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    transition: .2s ease-in-out;
+    margin-right: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+    box-shadow: 0 10px 20px -8px transparent;
+}
+
+.content button:hover {
+    transform: scale(1.1);
+}
+.content hr {
+    width: 70%;
+    border: 1px solid #e0e0e0;
+    margin: 20px 0;
+    margin-top: 130px;
+}
+footer {
+    padding: 20px;
+    margin-top: 750px;
+    
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 250px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Align text and buttons center */
+}
+
+.icon-button {
+    background-color: #04ddb2;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .4s;
+    box-shadow: 0 10px 20px -8px transparent;
+    transition: .2s ease-in-out;
+    
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+}
